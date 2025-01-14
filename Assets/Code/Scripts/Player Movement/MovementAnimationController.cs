@@ -2,17 +2,35 @@ using UnityEngine;
 
 public class MovementAnimationController : MonoBehaviour
 {
-    private Animator animator;
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
         float movement = Input.GetAxis("Horizontal");
         
-        animator.SetFloat("Movement", Mathf.Abs(movement));
+        _animator.SetFloat("Movement", Mathf.Abs(movement));
+
+        // if operation, longer but more readable
+        // if ( movement < 0 )
+        // {
+        //     _spriteRenderer.flipX = true;
+        // }
+        // else
+        // {
+        //     _spriteRenderer.flipX = false;
+        // }
+
+        // boolean assignment, shorter but may be harder to read
+        _spriteRenderer.flipX = movement < 0;
+
+        // ternary operator, shorter but more manageable
+        //_spriteRenderer.flipX = movement < 0 ? true : false;
     }
 }
