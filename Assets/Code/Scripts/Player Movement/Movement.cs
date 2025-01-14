@@ -6,15 +6,15 @@ public class Movement : MonoBehaviour {
     
     private Rigidbody2D _rigidBody;
 
-    private bool _isGrounded;
+    [field: SerializeField] public bool IsGrounded { get; private set; }
     
     private void Awake() => _rigidBody = GetComponent<Rigidbody2D>();
 
     private void Update() {
         
-        if (Input.GetButtonDown("Jump") && _isGrounded) {
+        if (Input.GetButtonDown("Jump") && IsGrounded) {
             _rigidBody.AddForce(Vector2.up * settings.jumpForce, ForceMode2D.Impulse);
-            _isGrounded = false;
+            IsGrounded = false;
         }
         
     }
@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour {
         // Dot product is a mathematical operation that returns a value between -1 and 1 based on the angle between two vectors
         // If the angle is 0, the dot product will return 1 and if the angle is 90 degrees, the dot product will return 0
         if (Vector2.Dot(other.contacts[0].normal, Vector2.up) > 0.5f) {
-            _isGrounded = true;
+            IsGrounded = true;
         }
         
     }

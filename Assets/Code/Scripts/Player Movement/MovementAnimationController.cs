@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class MovementAnimationController : MonoBehaviour
 {
+    private Movement _movement;
+    
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
 
     private void Awake()
     {
+        _movement = GetComponentInParent<Movement>();
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -16,6 +19,7 @@ public class MovementAnimationController : MonoBehaviour
         float movement = Input.GetAxis("Horizontal");
         
         _animator.SetFloat("Movement", Mathf.Abs(movement));
+        _animator.SetBool("IsGrounded", _movement.IsGrounded);
 
         // if operation, longer but more readable
         // if ( movement < 0 )
