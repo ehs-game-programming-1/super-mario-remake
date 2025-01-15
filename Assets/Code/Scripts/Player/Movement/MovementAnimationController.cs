@@ -37,4 +37,9 @@ public class MovementAnimationController : MonoBehaviour
         // ternary operator, shorter but more manageable
         //_spriteRenderer.flipX = movement < 0 ? true : false;
     }
+
+    public Animator GetAnimator()
+    {
+        return _animator;
+    }
 }

@@ -1,5 +1,6 @@
-using System;
 using UnityEngine;
+
+#region Old Code
 
 public enum EPowerupType
 {
@@ -7,30 +8,38 @@ public enum EPowerupType
     Fireball
 }
 
+#endregion
+
 public class Pickup : MonoBehaviour
 {
-    [ SerializeField ] private EPowerupType powerupType;
+    #region Old Code
+
+    //[ SerializeField ] private EPowerupType powerupType;
+
+    #endregion
     
-    private Powerup _powerup;
+    [SerializeField] private Powerup powerup;
 
     private void OnTriggerEnter2D( Collider2D other )
     {
         if ( other.TryGetComponent( out PlayerController controller ) )
         {
+            #region Old Code
+
             // switch statement
-            switch ( powerupType )
-            {
-                case EPowerupType.Mushroom:
-                    _powerup = new MushroomPowerup();
-                    break;
-                
-                case EPowerupType.Fireball:
-                    _powerup = new FireballPowerup();
-                    break;
-                
-                default:
-                    break;
-            }
+            // switch ( powerupType )
+            // {
+            //     case EPowerupType.Mushroom:
+            //         _powerup = new MushroomPowerup();
+            //         break;
+            //     
+            //     case EPowerupType.Fireball:
+            //         _powerup = new FireballPowerup();
+            //         break;
+            //     
+            //     default:
+            //         break;
+            // }
 
             // switch expression
             // _powerup = ( powerupType ) switch
@@ -40,7 +49,12 @@ public class Pickup : MonoBehaviour
             //     _ => throw new ArgumentOutOfRangeException()
             // };
 
-            _powerup.Consume(controller);
+            #endregion
+
+            if ( powerup != null )
+            {
+                powerup.Consume(controller);
+            }
         }
     }
 }
