@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Movement : MonoBehaviour {
@@ -31,7 +32,8 @@ public class Movement : MonoBehaviour {
         
     }
     
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
         
         // Check if the player is grounded by checking if the normal of the collision is pointing upwards
         // Dot product is a mathematical operation that returns a value between -1 and 1 based on the angle between two vectors
@@ -39,6 +41,5 @@ public class Movement : MonoBehaviour {
         if (Vector2.Dot(other.contacts[0].normal, Vector2.up) > 0.5f) {
             IsGrounded = true;
         }
-        
     }
 }

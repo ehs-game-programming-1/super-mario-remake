@@ -43,3 +43,14 @@ public class MovementAnimationController : MonoBehaviour
         return _animator;
     }
 }
+// if(switch (FireballPowerUp_on) && switch (MushroomPowerup_off)
+// {
+//     do this animation
+    
+// }
+// if(switch (FireballPowerup_on) && switch (MushroomPowerup_on)
+// {
+//     do this animation
+    
+// }
+
