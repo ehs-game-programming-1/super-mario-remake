@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f565aa22e354408a7a6ffe89e6534de, type: 3}
   m_Name: Powerup_Fireball
   m_EditorClassIdentifier: 
-  fireDamage: 10
+  overrideController: {fileID: 22100000, guid: ad9161441635c1448b2547b0ae95f3ff, type: 2}

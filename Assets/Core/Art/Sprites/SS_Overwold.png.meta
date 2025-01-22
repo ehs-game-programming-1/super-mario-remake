@@ -1339,6 +1339,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -5640,8 +5653,8 @@ TextureImporter:
         y: 429
         width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5772,8 +5785,8 @@ TextureImporter:
         y: 429
         width: 17
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6249,15 +6262,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_Overwold_243
+      name: A_Mario_White_Idle
       rect:
         serializedVersion: 2
         x: 178
         y: 320
         width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6315,15 +6328,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_Overwold_246
+      name: A_Mario_White_Walk1
       rect:
         serializedVersion: 2
         x: 240
         y: 320
         width: 12
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6337,15 +6350,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_Overwold_247
+      name: A_Mario_White_Walk2
       rect:
         serializedVersion: 2
         x: 255
         y: 320
         width: 14
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6359,15 +6372,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_Overwold_248
+      name: A_Mario_White_Walk3
       rect:
         serializedVersion: 2
         x: 272
         y: 320
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6381,15 +6394,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_Overwold_249
+      name: A_Mario_White_Jump
       rect:
         serializedVersion: 2
         x: 294
         y: 320
         width: 17
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -8918,8 +8931,8 @@ TextureImporter:
         y: 125
         width: 16
         height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -10420,6 +10433,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      A_Mario_White_Idle: 1991396187
+      A_Mario_White_Jump: -407950551
+      A_Mario_White_Walk1: 1770798723
+      A_Mario_White_Walk2: 1744344808
+      A_Mario_White_Walk3: 1678628967
       SS_Overwold_0: -2122818585
       SS_Overwold_1: 1909582648
       SS_Overwold_10: -1012754711
@@ -10581,13 +10599,8 @@ TextureImporter:
       SS_Overwold_240: -603352571
       SS_Overwold_241: -1325425736
       SS_Overwold_242: -1332162727
-      SS_Overwold_243: 1991396187
       SS_Overwold_244: 1467297762
       SS_Overwold_245: 554130000
-      SS_Overwold_246: 1770798723
-      SS_Overwold_247: 1744344808
-      SS_Overwold_248: 1678628967
-      SS_Overwold_249: -407950551
       SS_Overwold_25: -102702144
       SS_Overwold_250: -1408416787
       SS_Overwold_251: -2083802915

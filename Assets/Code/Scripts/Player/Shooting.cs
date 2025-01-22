@@ -1,28 +1,52 @@
-using System;
 using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    [ SerializeField ] private KeyCode shootingKey = KeyCode.E;
-    [ SerializeField ] private Transform muzzle;
-    
+    [ SerializeField ] private KeyCode shootingKey = KeyCode.E;   
+    [ SerializeField ] private GameObject muzzle;
+
     private GameObject _objectToSpawn;
 
-    private void Awake()
+    /*private void Awake()
     {
         enabled = false;
     }
+    */
 
-    private void Update()
+      void Start()
+     {
+         // Disattiva l'oggetto quando inizia la scena di gioco
+         muzzle.gameObject.SetActive(false);
+     }
+   
+
+    // se viene Mario collide con il fiore, il muzzle si crea
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if ( Input.GetKeyDown(shootingKey) )
+
+            muzzle.gameObject.SetActive(true);
+        
+    }
+
+     private void Update()
         {
-            GameObject go = Instantiate( _objectToSpawn, muzzle.position, Quaternion.identity );
-        }
-    }
+            // se cliccato il pulsante "e" si crea un muzzle con la setta posizione e rotazione di "hands"
+            if (Input.GetKeyDown(shootingKey))
+            {
+                GameObject muzzleInstance = Instantiate(muzzle, transform.position, transform.rotation);
 
-    public void SetObjectToSpawn( GameObject go )
-    {
-        _objectToSpawn = go;
-    }
-}
+             // al muzzle viene applicato una forza verso destra
+                muzzleInstance.GetComponent<Rigidbody2D>().AddForce(transform.right * 10, ForceMode2D.Impulse);         
+
+
+            }
+        }
+
+
+
+   /*     public void SetObjectToSpawn(GameObject go)
+        {
+            _objectToSpawn = go;
+        }
+    */
+} 

@@ -39,6 +39,10 @@ public class Movement : MonoBehaviour {
         if (Vector2.Dot(other.contacts[0].normal, Vector2.up) > 0.5f) {
             IsGrounded = true;
         }
-        
+
+       
+      
+
     }
+    
 }
