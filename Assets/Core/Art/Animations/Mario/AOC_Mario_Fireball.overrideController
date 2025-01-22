@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AOC_Mario_Fireball
+  m_Controller: {fileID: 9100000, guid: 1529383e92fc4e042ac9d4dd8465a8d8, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 82a9ac07c79b1bc48b885cc065844f89, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 51337e917e794724888659f918488fbb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f70b13c96edeb6448b442fb3e7bb4ed0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4098f3b58bfd3b94581e43e7f4878f9e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3573577726f1c254487bc16b27f8df01, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8825e250aaf61c247872601e375a2c79, type: 2}

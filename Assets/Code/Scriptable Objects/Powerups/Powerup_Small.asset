@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8916ac672274c6ea6bb6c0c14de0332, type: 3}
-  m_Name: Powerup_Mushroom
+  m_Script: {fileID: 11500000, guid: 8795b6df057d407a8ce83ea1c29f8a10, type: 3}
+  m_Name: Powerup_Small
   m_EditorClassIdentifier: 
-  <Priority>k__BackingField: 0
-  overrideController: {fileID: 22100000, guid: 43b356a8a94eccc43bf46b568d01a654, type: 2}
+  <Priority>k__BackingField: -1
+  overrideController: {fileID: 22100000, guid: 38d5d06d4055065489132b772ed59f83, type: 2}

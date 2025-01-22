@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f565aa22e354408a7a6ffe89e6534de, type: 3}
   m_Name: Powerup_Fireball
   m_EditorClassIdentifier: 
-  fireDamage: 10
+  <Priority>k__BackingField: 1
+  overrideController: {fileID: 22100000, guid: 406db894acbee05499fca3e8217df23e, type: 2}
+  gameObject: {fileID: 4457329532267192163, guid: 2b70d92d90af15947bf479fd625ca8be, type: 3}
