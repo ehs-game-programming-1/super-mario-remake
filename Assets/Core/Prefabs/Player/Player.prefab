@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 646791589502858955}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.5, z: 0}
+  m_LocalPosition: {x: 1, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -118,8 +118,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 511625381
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1846791772, guid: 17f3e65bf9aeafe439503184d1697e56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 7067145450707595978}
   - component: {fileID: 2999613169320839592}
   - component: {fileID: 7177599183212159138}
+  - component: {fileID: 5287640103539239782}
   - component: {fileID: 1316412447820337477}
   - component: {fileID: 2708570817588553053}
   m_Layer: 0
@@ -256,6 +257,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingKey: 101
   muzzle: {fileID: 7271798280654680315}
+--- !u!114 &5287640103539239782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4570054280728095473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cb062875970b44091dd746fd4a798a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  deathDirections:
+  - {x: 1, y: 0, z: 0}
+  - {x: -1, y: 0, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!50 &1316412447820337477
 Rigidbody2D:
   serializedVersion: 5

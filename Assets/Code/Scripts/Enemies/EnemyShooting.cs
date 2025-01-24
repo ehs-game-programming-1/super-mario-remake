@@ -19,10 +19,11 @@ public class EnemyShooting : MonoBehaviour
         {
             Bullet bullet = Instantiate( bulletToSpawn, muzzle.position, quaternion.identity );
 
-            Vector3 direction = ( bulletDirection ) switch
+            Vector3 direction = (bulletDirection) switch
             {
                 Direction.Left => Vector3.left,
                 Direction.Right => Vector3.right,
+                _ => throw new NotImplementedException(),
             };
 
             muzzle.localPosition = new Vector3(direction.x, 0.5f);

@@ -12,7 +12,7 @@ public class LateralMovement : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Vector3 _direction = Vector3.left;
 
-    private Vector3 OffsetPosition => new (transform.position.x + ( _collider.size.x * 0.5f ) * _direction.x, transform.position.y + 0.5f, 0 );
+    private Vector3 OffsetPosition => new (transform.position.x + ( (_collider.size.x * 0.5f) + 0.05f ) * _direction.x, transform.position.y + 0.5f, 0 );
     
     private void Awake()
     {
