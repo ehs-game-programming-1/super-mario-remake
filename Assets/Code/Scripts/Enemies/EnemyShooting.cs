@@ -25,7 +25,7 @@ public class EnemyShooting : MonoBehaviour
                 Direction.Right => Vector3.right,
             };
 
-            muzzle.localPosition = direction;
+            muzzle.localPosition = new Vector3(direction.x, 0.5f);
             
             bullet.SetVelocity(direction);
 
