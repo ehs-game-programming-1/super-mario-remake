@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 2999613169320839592}
   - component: {fileID: 7177599183212159138}
   - component: {fileID: 5287640103539239782}
+  - component: {fileID: 4817038167272376792}
   - component: {fileID: 1316412447820337477}
   - component: {fileID: 2708570817588553053}
   m_Layer: 0
@@ -226,8 +227,8 @@ MonoBehaviour:
   settings:
     walkSpeed: 10
     runSpeed: 10
-    maxSpeed: 5
-    jumpForce: 5
+    maxSpeed: 8
+    jumpForce: 7
   <IsGrounded>k__BackingField: 0
 --- !u!114 &2999613169320839592
 MonoBehaviour:
@@ -271,9 +272,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   deathDirections:
-  - {x: 1, y: 0, z: 0}
-  - {x: -1, y: 0, z: 0}
   - {x: 0, y: 1, z: 0}
+--- !u!114 &4817038167272376792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4570054280728095473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7dc4456c16a0f54ea0e857ab671d20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1316412447820337477
 Rigidbody2D:
   serializedVersion: 5
