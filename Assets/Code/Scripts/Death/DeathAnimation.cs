@@ -7,16 +7,15 @@ public class DeathAnimation : MonoBehaviour
 
     private void Awake()
     {
-        _deathComponent = GetComponent<DeathComponent>();
-        _animator = GetComponentInChildren<Animator>();
+        _deathComponent = GetComponent< DeathComponent >();
+        _animator = GetComponentInChildren< Animator >();
     }
 
     private void OnEnable() => _deathComponent.OnDeath += PlayAnimation;
     private void OnDisable() => _deathComponent.OnDeath -= PlayAnimation;
 
-    void PlayAnimation() 
+    protected virtual void PlayAnimation() 
     {
-        //if ( _animator.GetBool("IsAlive") )  
-        _animator.SetBool("IsAlive", false);
+        _animator.SetBool("IsDead", true);
     }
 }

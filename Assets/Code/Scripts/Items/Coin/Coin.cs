@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
 
         if ( other.TryGetComponent( out ScoreManager manager ) )
         {
-            manager.AddScore(amount);
+            manager.Score.AddScore(amount);
             gameObject.SetActive(false);
         }
     }

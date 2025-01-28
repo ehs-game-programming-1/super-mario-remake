@@ -18,7 +18,7 @@ public class DeathComponent : MonoBehaviour
 
                 OnDeath?.Invoke();
 
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
 
                 Debug.Log(gameObject.name + " has died!");
             }

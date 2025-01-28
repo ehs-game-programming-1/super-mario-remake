@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 2999613169320839592}
   - component: {fileID: 7177599183212159138}
   - component: {fileID: 5287640103539239782}
-  - component: {fileID: 4817038167272376792}
+  - component: {fileID: 5079903573794911463}
   - component: {fileID: 1316412447820337477}
   - component: {fileID: 2708570817588553053}
   m_Layer: 0
@@ -211,6 +211,7 @@ MonoBehaviour:
   <AnimationController>k__BackingField: {fileID: 1406670037967546199}
   <Shooting>k__BackingField: {fileID: 7177599183212159138}
   <ScoreManager>k__BackingField: {fileID: 2999613169320839592}
+  <DeathComponent>k__BackingField: {fileID: 5287640103539239782}
   <ActivePowerup>k__BackingField: {fileID: 11400000, guid: 3441b89c5c0ae614e8f3639f20a41476, type: 2}
 --- !u!114 &7067145450707595978
 MonoBehaviour:
@@ -227,8 +228,8 @@ MonoBehaviour:
   settings:
     walkSpeed: 10
     runSpeed: 10
-    maxSpeed: 8
-    jumpForce: 7
+    maxSpeed: 5
+    jumpForce: 5
   <IsGrounded>k__BackingField: 0
 --- !u!114 &2999613169320839592
 MonoBehaviour:
@@ -273,7 +274,9 @@ MonoBehaviour:
   type: 0
   deathDirections:
   - {x: 0, y: 1, z: 0}
---- !u!114 &4817038167272376792
+  - {x: 1, y: 0, z: 0}
+  - {x: -1, y: 0, z: 0}
+--- !u!114 &5079903573794911463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

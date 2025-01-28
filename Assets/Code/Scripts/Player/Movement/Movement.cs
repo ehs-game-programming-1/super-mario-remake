@@ -13,7 +13,8 @@ public class Movement : MonoBehaviour {
     private void Update() {
         
         if (Input.GetButtonDown("Jump") && IsGrounded) {
-            _rigidBody.AddForce(Vector2.up * settings.jumpForce, ForceMode2D.Impulse);
+            
+            AddForce(Vector2.up, settings.jumpForce, 1, ForceMode2D.Impulse);
             IsGrounded = false;
         }
         
@@ -23,7 +24,7 @@ public class Movement : MonoBehaviour {
         
         float horizontal = Input.GetAxis("Horizontal");
         
-        _rigidBody.AddForce(Vector2.right * (horizontal * settings.walkSpeed));
+        AddForce(Vector2.right, settings.walkSpeed, horizontal);
         
         // Clamp the velocity to the max speed
         // Clamping means that if the value is higher than the max speed, it will be set to the max speed and if it's lower than the max speed, it will stay the same
@@ -41,4 +42,6 @@ public class Movement : MonoBehaviour {
         }
         
     }
+
+    public void AddForce( Vector2 direction, float force, float axis = 1, ForceMode2D forceMode2D = ForceMode2D.Force ) => _rigidBody.AddForce(direction * (axis * force), forceMode2D);
 }
