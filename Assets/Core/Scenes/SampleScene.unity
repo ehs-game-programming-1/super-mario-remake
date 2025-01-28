@@ -2386,9 +2386,9 @@ GameObject:
   - component: {fileID: 1696926095}
   - component: {fileID: 1696926098}
   - component: {fileID: 1696926099}
+  - component: {fileID: 1696926100}
   - component: {fileID: 1696926097}
   - component: {fileID: 1696926096}
-  - component: {fileID: 1696926100}
   m_Layer: 7
   m_Name: Goomba_1
   m_TagString: Untagged
@@ -2517,8 +2517,6 @@ MonoBehaviour:
   type: 1
   deathDirections:
   - {x: 0, y: 1, z: 0}
-  - {x: -1, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
 --- !u!114 &1696926100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3114,8 +3112,6 @@ MonoBehaviour:
   type: 1
   deathDirections:
   - {x: 0, y: 1, z: 0}
-  - {x: -1, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
 --- !u!114 &2046107752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3210,26 +3206,6 @@ PrefabInstance:
     - target: {fileID: 4570054280728095473, guid: bfb8381fd8d464e4bbeab4ffd0345dca, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5287640103539239782, guid: bfb8381fd8d464e4bbeab4ffd0345dca, type: 3}
-      propertyPath: deathDirections.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5287640103539239782, guid: bfb8381fd8d464e4bbeab4ffd0345dca, type: 3}
-      propertyPath: deathDirections.Array.data[0].x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5287640103539239782, guid: bfb8381fd8d464e4bbeab4ffd0345dca, type: 3}
-      propertyPath: deathDirections.Array.data[0].y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5287640103539239782, guid: bfb8381fd8d464e4bbeab4ffd0345dca, type: 3}
-      propertyPath: deathDirections.Array.data[1].x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5287640103539239782, guid: bfb8381fd8d464e4bbeab4ffd0345dca, type: 3}
-      propertyPath: deathDirections.Array.data[1].y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6938964289790320880, guid: bfb8381fd8d464e4bbeab4ffd0345dca, type: 3}
       propertyPath: m_LocalPosition.x
